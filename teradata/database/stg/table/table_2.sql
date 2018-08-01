@@ -6,5 +6,7 @@ CREATE SET TABLE DEV3_BIW_STG.table_2 ,NO FALLBACK ,
      (
       emp_no2 INTEGER,
       emp_name2 VARCHAR(100) CHARACTER SET LATIN NOT CASESPECIFIC,
-      source_system_id2 INTEGER)
+      source_system_id2 INTEGER,
+      xyz integer
+     )
 PRIMARY INDEX ( emp_no2 );
