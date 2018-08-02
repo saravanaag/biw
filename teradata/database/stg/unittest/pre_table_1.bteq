@@ -1,0 +1,11 @@
+delete from DEV3_BIW_STG.table_1;
+
+select 1 from DEV3_BIW_STG.table_1;
+
+.if activitycount <> 0 then .goto error;
+
+exit 0;
+
+.label error;
+
+exit 102;
