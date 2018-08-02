@@ -3,4 +3,12 @@ INSERT	INTO DEV3_BIW_STG.table_1
 VALUES
 (101, 'saravanan', 1, 3);
 
+select 1 from DEV3_BIW_STG.table_1;
+
+.if activitycount <> 1 then .goto error;
+
 exit 0;
+
+.label error;
+
+exit 102;
